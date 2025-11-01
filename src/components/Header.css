@@ -62,11 +62,9 @@
   font-size: 1rem;
   color: white;
   padding: 0px 20px;
-
   border-radius: 10px;
   border: 2px solid white;
   background: transparent;
-  /* border-image: linear-gradient(to right, blue, green); */
 }
 
 .header-top input::placeholder {
@@ -75,12 +73,14 @@
 
 .header-top input:hover {
   background: rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 10px #d7d388;
 }
 
 .header-top input:focus {
   outline: none;
   border-color: white;
   background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 0px 10px #d7d388;
 }
 
 .favorite-btn {
