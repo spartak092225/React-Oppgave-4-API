@@ -4,8 +4,8 @@
   justify-content: center;
   grid-template-columns: repeat(auto-fit, minmax(200px, 200px));
   gap: 2rem;
+  padding: 0 30px;
   list-style: none;
-  margin: 0;
 }
 
 .country {
@@ -18,10 +18,10 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem;
+  padding: 0.75rem;
   border-radius: 10px;
   color: white;
-  text-align: center;
+  text-align: left;
 }
 
 .info {
@@ -30,6 +30,11 @@
 
 p {
   font-size: 0.75rem;
+  margin-top: 0.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
 }
 
 .countryName {
@@ -40,7 +45,7 @@ p {
 .flag {
   width: 100px;
   height: 80px;
-  margin-bottom: 1rem;
+
   object-fit: contain;
 }
 
@@ -79,7 +84,7 @@ button:disabled {
   appearance: none;
   content: url(public/heart-empty.png);
   filter: invert(1);
-  width: 30px;
+  width: 20px;
   border: none;
 }
 
@@ -101,6 +106,7 @@ button:disabled {
 .favoriteBtn:checked {
   content: url(public/heart-filled.png);
   filter: invert(0);
-  width: 30px;
+  width: 20px;
+
 }
 
