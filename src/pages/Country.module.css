@@ -135,9 +135,6 @@ button:disabled {
   }
 }
 
-@media screen and (max-width: 750px) {
-}
-
 @media screen and (max-width: 550px) {
   .country {
     width: 350px;
