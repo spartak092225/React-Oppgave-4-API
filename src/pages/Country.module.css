@@ -10,9 +10,9 @@
 
 .country {
   width: 200px;
-  height: 280px;
+  height: 230px;
   border: 1px solid #d3d5fd;
-  box-shadow: 0px 0px 10px #d7d388;
+  box-shadow: 0px 0px 7px #d7d388;
   background: #e2e4ff53;
   display: flex;
   flex-direction: column;
@@ -21,7 +21,8 @@
   padding: 0.75rem;
   border-radius: 10px;
   color: white;
-  text-align: left;
+  text-align: center;
+  align-self: center;
 }
 
 .info {
@@ -35,6 +36,7 @@ p {
 
 h2 {
   font-size: 1.5rem;
+  overflow-wrap: break-word;
 }
 
 .countryName {
@@ -43,9 +45,8 @@ h2 {
 }
 
 .flag {
-  width: 100px;
-  height: 80px;
-
+  width: 80px;
+  height: 60px;
   object-fit: contain;
 }
 
@@ -71,14 +72,13 @@ button {
 
 button:hover {
   background-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 10px #d7d388;
+  box-shadow: 0px 0px 7px #d7d388;
 }
 
 button:disabled {
   opacity: 0.5;
   cursor: not-allowed;
 }
-
 
 .favoriteBtn {
   appearance: none;
@@ -107,6 +107,70 @@ button:disabled {
   content: url(public/heart-filled.png);
   filter: invert(0);
   width: 20px;
-
 }
 
+.flagModal {
+  width: 180px;
+  margin-bottom: 10px;
+}
+
+.modalContent {
+  text-align: center;
+}
+
+@media screen and (max-width: 1200px) {
+  .country {
+    width: 180px;
+    height: 220px;
+    padding: 0.75rem;
+    justify-self: center;
+  }
+  h2 {
+    font-size: 1.25rem;
+  }
+
+  p {
+    margin-top: 0.25rem;
+  }
+
+  .countryName {
+    font-size: 1.25rem;
+    font-weight: bolder;
+  }
+
+  .flag {
+    width: 80px;
+    height: 60px;
+    object-fit: contain;
+  }
+}
+
+@media screen and (max-width: 750px) {
+}
+
+@media screen and (max-width: 550px) {
+  .country {
+    width: 350px;
+    height: 100px;
+    padding: 0.75rem;
+    flex-direction: row;
+  }
+
+  .flag {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+  }
+
+  .countryList {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+}

@@ -8,7 +8,7 @@
 .region {
   text-decoration: none;
   color: white;
-  font-size: 1.5rem;
+  font-size: 1rem;
   padding: 10px;
   border: 1px solid rgba(255, 255, 255, 0);
 }
@@ -18,7 +18,7 @@
   border-radius: 10px;
   padding: 10px;
   background: rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 10px #d7d388;
+  box-shadow: 0px 0px 7px #d7d388;
 }
 
 .region:active,
@@ -27,11 +27,11 @@
   border-radius: 10px;
   padding: 10px;
   background: rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 10px #d7d388;
+  box-shadow: 0px 0px 7px #d7d388;
 }
 .navbar {
   width: 100%;
-  padding: 20px 40px;
+  padding: 0px 40px 20px 40px;
   display: flex;
   justify-content: center;
   justify-content: space-between;
@@ -40,12 +40,10 @@
 .header-top {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-
   padding: 20px 40px;
 }
-
 
 .header-top form {
   display: flex;
@@ -69,18 +67,18 @@
 
 .header-top input:hover {
   background: rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 10px #d7d388;
+  box-shadow: 0px 0px 7px #d7d388;
 }
 
 .header-top input:focus {
   outline: none;
   border-color: white;
   background: rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 10px #d7d388;
+  box-shadow: 0px 0px 7px #d7d388;
 }
 
 .favorite-btn {
-  min-width: 160px;
+  min-width: 130px;
   height: 40px;
   padding: 5px;
   font-size: 1rem;
@@ -90,7 +88,6 @@
   justify-content: center;
   justify-content: space-around;
   border-radius: 10px;
-  width: 100px;
   color: white;
   background: transparent;
   border: 2px solid white;
@@ -98,11 +95,61 @@
 
 .favorite-btn:hover {
   background-color: rgba(0, 0, 0, 0.1);
-  box-shadow: 0px 0px 10px #d7d388;
+  box-shadow: 0px 0px 7px #d7d388;
 }
 
 .favorite-btn:active,
 .favorite-btn:focus {
   background-color: rgba(0, 0, 0, 0.2);
-  box-shadow: 0px 0px 10px #d7d388;
+  box-shadow: 0px 0px 7px #d7d388;
+}
+
+@media screen and (max-width: 750px) {
+  .header-top input {
+    height: 40px;
+    width: 300px;
+    font-size: 1rem;
+    color: white;
+    padding: 0px 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background: transparent;
+  }
+
+  .favorite-btn {
+    min-width: 40px;
+    height: 40px;
+    padding: 5px;
+    font-size: 0.9rem;
+    text-decoration: none;
+    content: url("/public/heart-filled.png");
+    object-fit: contain;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    color: white;
+    background: transparent;
+    border: 2px solid white;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .header-top input {
+    width: 200px;
+  }
+  .region {
+    text-decoration: none;
+    color: white;
+    font-size: 0.75rem;
+    padding: 10px;
+    border: 1px solid rgba(255, 255, 255, 0);
+  }
+  .navbar {
+    padding: 0px 20px 20px 20px;
+  }
+  .header-top {
+    padding: 20px;
+  }
 }

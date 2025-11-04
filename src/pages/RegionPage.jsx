@@ -1,7 +1,7 @@
-import { useContext, useEffect, useState } from 'react';
-import { CountriesContext } from '../CountriesContext';
-import Modal from '../components/Modal';
-import styles from './Country.module.css';
+import { useContext, useEffect, useState } from "react";
+import { CountriesContext } from "../CountriesContext";
+import Modal from "../components/Modal";
+import styles from "./Country.module.css";
 
 export default function RegionPage({ region }) {
   const {
@@ -26,7 +26,7 @@ export default function RegionPage({ region }) {
     setCurrentPage(1);
   }, [countries]);
 
-  const countriesPerPage = 12;
+  const countriesPerPage = 10;
   const lastCountryIndex = currentPage * countriesPerPage;
   const firstCountryIndex = lastCountryIndex - countriesPerPage;
   const currentCountries = countries.slice(firstCountryIndex, lastCountryIndex);
@@ -62,14 +62,14 @@ export default function RegionPage({ region }) {
                 <div className={styles.info}>
                   <h2>{c.name.common}</h2>
                   <p className={styles.capital}>
-                    <strong>Capital:</strong> {c.capital?.[0] || 'N/A'}
+                    <strong>Capital:</strong> {c.capital?.[0] || "N/A"}
                   </p>
                   <p className={styles.region}>
                     <strong>Region:</strong> {c.region}
                   </p>
                   <p className={styles.population}>
-                    <strong>Population:</strong>{' '}
-                    {c.population?.toLocaleString() || 'N/A'}
+                    <strong>Population:</strong>{" "}
+                    {c.population?.toLocaleString() || "N/A"}
                   </p>
                 </div>
                 <label
@@ -127,7 +127,7 @@ export default function RegionPage({ region }) {
             </div>
             <p>
               <strong>Capital: </strong>
-              {selectedCountry.capital[0] || 'N/A'}
+              {selectedCountry.capital[0] || "N/A"}
             </p>
             <p>
               <strong>Region: </strong>
@@ -135,18 +135,18 @@ export default function RegionPage({ region }) {
             </p>
             <p>
               <strong>Subregion: </strong>
-              {selectedCountry.subregion || 'N/A'}
+              {selectedCountry.subregion || "N/A"}
             </p>
             <p>
-              <strong>Population: </strong>{' '}
-              {selectedCountry.population.toLocaleString || 'N/A'}
+              <strong>Population: </strong>{" "}
+              {selectedCountry.population.toLocaleString || "N/A"}
             </p>
             <p>
               <strong>Phone code: </strong>
               {selectedCountry.idd.root}
               {selectedCountry.idd.suffixes
                 ? selectedCountry.idd.suffixes[0]
-                : ''}
+                : ""}
             </p>
           </div>
         </Modal>
