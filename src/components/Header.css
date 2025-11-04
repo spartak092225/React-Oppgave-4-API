@@ -132,12 +132,12 @@
   }
   .region {
     font-size: 0.75rem;
-    padding: 10px;
+    margin: 0;
   }
   .navbar {
-    padding: 0px 20px 20px 20px;
+    padding: 0px 0px 20px 0px;
   }
   .header-top {
-    padding: 20px;
+    padding: 10px 0px;
   }
 }
