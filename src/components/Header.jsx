@@ -84,7 +84,7 @@ export function Header() {
 
         <Link to="/Favorites" className="favorite-btn">
           <img
-            src="heart-filled.png"
+            src="/heart-filled.png"
             alt="favorite icon"
             className="favoriteIcon"
             width={20}
