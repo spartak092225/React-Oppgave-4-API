@@ -106,14 +106,10 @@
 
 @media screen and (max-width: 750px) {
   .header-top input {
-    height: 40px;
     width: 300px;
-    font-size: 1rem;
-    color: white;
+    font-size: 0.75rem;
     padding: 0px 20px;
     border-radius: 10px;
-    border: 2px solid white;
-    background: transparent;
   }
 
   .favorite-btn {
@@ -121,17 +117,8 @@
     height: 40px;
     padding: 5px;
     font-size: 0.9rem;
-    text-decoration: none;
     content: url("/heart-filled.png");
     object-fit: contain;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-around;
-    border-radius: 10px;
-    color: white;
-    background: transparent;
-    border: 2px solid white;
   }
 }
 
@@ -140,11 +127,8 @@
     width: 200px;
   }
   .region {
-    text-decoration: none;
-    color: white;
     font-size: 0.75rem;
     padding: 10px;
-    border: 1px solid rgba(255, 255, 255, 0);
   }
   .navbar {
     padding: 0px 20px 20px 20px;
