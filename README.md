@@ -1,16 +1,29 @@
-# React + Vite
+# 🌍 Countries Explorer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Et responsivt React-prosjekt som lar brukere utforske land fra hele verden.  
+Appen henter data fra **REST Countries API** og tilbyr søk, filtrering etter region og et favorittsystem som lagres i nettleseren.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Funksjoner
 
-## React Compiler
+- 🔍 **Søk** etter land, hovedstad, region, subregion eller telefonkode
+- 🌎 **Filtrering etter region** (Afrika, Asia, Europa, Oseania, Amerika)
+- ❤️ **Legg til/fjern favoritter** – lagres i `localStorage`
+- 🪟 **Modal-visning** for detaljer om hvert land
+- 📱 **Responsivt design** for mobil, nettbrett og PC
+- ⚡ **Klient-side routing** via React Router (`HashRouter`)
+- 💾 **Vedvarende tilstand** med React Context API
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠️ Teknologier brukt
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React** (med Hooks)
+- **React Router DOM**
+- **REST Countries API v3.1**
+- **Context API** for global tilstand
+- **CSS Modules** for isolert styling
+- **LocalStorage** for lagring av favoritter
+
+---
