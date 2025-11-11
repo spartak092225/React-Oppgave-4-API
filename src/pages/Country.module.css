@@ -97,7 +97,7 @@ button:disabled {
 
 .favoriteLbl {
   margin-top: 5px;
-  display: flex;
+
   display: inline;
   flex-shrink: 0;
   border: none;
@@ -165,9 +165,5 @@ button:disabled {
 
   h2 {
     font-size: 0.75rem;
-  }
-
-  .favoriteBtn {
-    transform: translate(0, -30px);
   }
 }
