@@ -114,22 +114,38 @@ export default function Home() {
                 <h2 className={styles.nameModal}>
                   {selectedCountry.name.common}
                 </h2>
+                <label
+                  htmlFor={`fav-modal-${selectedCountry.cca3}`}
+                  className={styles.favoriteLbl}
+                >
+                  <input
+                    type="checkbox"
+                    className={styles.favoriteBtn}
+                    id={`fav-modal-${selectedCountry.cca3}`}
+                    checked={favorites.includes(selectedCountry.cca3)}
+                    onChange={() => toggleFavorite(selectedCountry.cca3)}
+                  />
+                </label>
               </div>
               <p>
-                <strong>Capital:</strong> {selectedCountry.capital[0] || "N/A"}
+                <strong>Capital: </strong>
+                {selectedCountry.capital[0] || "N/A"}
               </p>
               <p>
-                <strong>Region:</strong> {selectedCountry.region}
+                <strong>Region: </strong>
+                {selectedCountry.region}
               </p>
               <p>
-                <strong>Subregion:</strong> {selectedCountry.subregion || "N/A"}
+                <strong>Subregion: </strong>
+                {selectedCountry.subregion || "N/A"}
               </p>
               <p>
-                <strong>Population:</strong>{" "}
-                {selectedCountry.population.toLocaleString() || "N/A"}
+                <strong>Population: </strong>{" "}
+                {selectedCountry.population.toLocaleString || "N/A"}
               </p>
               <p>
-                <strong>Phone code:</strong> {selectedCountry.idd.root}
+                <strong>Phone code: </strong>
+                {selectedCountry.idd.root}
                 {selectedCountry.idd.suffixes
                   ? selectedCountry.idd.suffixes[0]
                   : ""}

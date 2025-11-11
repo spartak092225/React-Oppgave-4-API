@@ -141,7 +141,7 @@ button:disabled {
 
 @media screen and (max-width: 550px) {
   .country {
-    width: 350px;
+    width: 340px;
     height: 100px;
     padding: 0.75rem;
     flex-direction: row;
@@ -164,5 +164,9 @@ button:disabled {
 
   h2 {
     font-size: 0.75rem;
+  }
+
+  .favoriteBtn {
+    transform: translate(0, -30px);
   }
 }
