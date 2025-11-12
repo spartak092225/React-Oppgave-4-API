@@ -8,16 +8,13 @@ const getItemsPerPage = () => {
   const width = window.innerWidth;
 
   if (width <= 720) {
-    return 6;
-  }
-  if (width <= 930) {
-    return 9;
+    return 10;
   }
   if (width <= 1150) {
-    return 8;
+    return 12;
   }
   if (width <= 1350) {
-    return 10;
+    return 15;
   }
   if (width <= 1600) {
     return 12;
